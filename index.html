@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Maa</title>
+        <link rel="stylesheet" href="./style.css" />
+        <script>
+            function toggleButton() {
+                const checkbox = document.getElementById("terms");
+                const button = document.getElementById("continueButton");
+                const termsDiv = document.getElementById("termsDiv");
+
+                // If the checkbox is checked, hide the checkbox and show the button
+                if (checkbox.checked) {
+                    termsDiv.style.display = "none"; // Hide the checkbox
+                    button.style.display = "block";  // Show the button
+                } else {
+                    termsDiv.style.display = "block"; // Show the checkbox if unchecked
+                    button.style.display = "none";  // Hide the button if unchecked
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="tenor-gif-embed" data-postid="20161779" data-share-method="host" data-aspect-ratio="0.95625" data-width="100%"><a href="https://tenor.com/view/shy-cute-gif-20161779">Shy Cute Sticker</a>from <a href="https://tenor.com/search/shy-stickers">Shy Stickers</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>            
+            <h2>Oyy maa, ninnu okati adagaali<br></h2>
+            
+            <div class="terms" id="termsDiv">
+                <input type="checkbox" id="terms" onclick="toggleButton()" />
+                <label for="terms">Yekkuva aalochinchaku click chey mundhu <br></label>
+            </div>
+            
+            <!-- The button is hidden initially -->
+            <div class="btn" id="continueButton" style="display: none;">
+                <a href="main.html">Are you sure!! </a>
+            </div>
+        </div>
+    </body>
+</html>
